@@ -8,12 +8,12 @@
 
 int main(void)
 {
-    int no = 0;
-    while (no < 10)
-    {
-        printf("%d", no);
-        no += 1;
-    }
-    printf("\n");
+int n;
+while (n < 10)
+{
+printf("%d", n);
+n += 1;
+}
+printf("\n");
 return (0);
 }
