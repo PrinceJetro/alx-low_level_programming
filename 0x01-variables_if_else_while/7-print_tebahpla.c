@@ -17,7 +17,7 @@ n += 1;
 }
 while (l <= 'f')
 {
-putchar(l);
+printf("%c",l);
 l++;
 }
 putchar('\n');
