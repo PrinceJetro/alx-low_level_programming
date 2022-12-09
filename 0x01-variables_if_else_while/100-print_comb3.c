@@ -1,33 +1,46 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * main - program that prints the numbers from 00 to 99
- * Numbers must be separated by ,followed by a space
- * Numbers should be printed in ascending order with 2 digits
+ * main - main block
+ * Description: Write a program that prints all possible
+ * different combinations of two digits
+ * Numbers must be separated by ,, followed by a space
+ * The two digits must be different
+ * 01 and 10 are considered the same combination of the two digits 0 and 1
+ * Print only the smallest combination of two digits
+ * Numbers should be printed in ascending order, with two digits
  * You can only use the putchar function
+ * (every other function (printf, puts, etc) is forbidden)
+ * You can only use putchar five times maximum in your code
+ * You are not allowed to use any variable of type char
+ * All your code should be in the main function
  * Return: 0
  */
-
 int main(void)
 {
-int n1 = 48;
-int n2 = 48;
-int com = 44;
-while (n1 <= 57)
+int c;
+int d = 0;
+
+while (d < 10)
 {
-n2 = 48;
-while (n2 <= 57)
+c = 0;
+while (c < 10)
 {
-putchar(n1);
-putchar(n2);
-if (n1 != 57 || n2 != 57)
+if (d != c && d < c)
 {
-putchar(com);
-putchar(32);
+putchar('0' + d);
+putchar('0' + c);
+
+if (c + d != 17)
+{
+putchar(',');
+putchar(' ');
 }
-n2 += 1;
 }
-n1 += 1;
+
+c++;
+}
+d++;
 }
 putchar('\n');
 return (0);
