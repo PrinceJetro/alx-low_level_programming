@@ -1,3 +1,5 @@
+#include "main.c"
+
 void print_alphabet_x10(void)
 {
 int l;
