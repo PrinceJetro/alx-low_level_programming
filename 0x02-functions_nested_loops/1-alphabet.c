@@ -1,18 +1,37 @@
 #include "main.h"
 
+
+
 /**
- * main - print_alphabet
- * Return: 0
- */
+ *
+ *  * print_alphabet - entry point
+ *
+ *   * Return: 0
+ *
+ *    */
+
+
 
 void print_alphabet(void)
+
 {
-int n = 97;
-while (n <= 122)
-{
-_putchar(n);
-n++;
-}
-_putchar('\n');
-return (0);
+
+		char c = 'a';
+
+
+
+			while (c <= 'z')
+
+					{
+
+								_putchar(c);
+
+										c++;
+
+
+
+											}
+
+				_putchar('\n');
+
 }

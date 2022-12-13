@@ -4,7 +4,7 @@
 
 /**
  *
- *  * main - check the code
+ *  * main - check the code for Holberton School students.
  *
  *   *
  *
@@ -15,9 +15,8 @@
 int main(void)
 
 {
+print_alphabet();
 
-	    print_alphabet();
-
-	        return (0);
+return (0);
 
 }
