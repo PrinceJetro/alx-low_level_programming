@@ -1,10 +1,7 @@
 #include "main.h"
 
 /**
- * mul - multiplies 2 nums
- * @a: first param
- * @b: second param
- * Return: something
+ * print_numbers - prints number
  */
 
 void print_numbers(void)
