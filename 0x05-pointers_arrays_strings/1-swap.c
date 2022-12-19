@@ -2,20 +2,17 @@
 #include "main.h"
 
 /**
- * _strlen - Function for counting the length of string
- * @s: a pointer for counting the strting lenth
+ * swap_int - This function swaps the value of two integers
+ * @a: a pointer dereference for changing the value of the variable a
+ * @b: a pointer deference for changing the value of the variable b
+ * int c: assigning the address of the variable a to c
  * Author: Sammykingx
- * Return: int i
+ * Return 0 success.
 */
 
-int _strlen(char *s)
+void swap_int(int *a, int *b)
 {
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-
-	return (i);
+	int c = *a;
+	*a = *b;
+	*b = c;
 }
