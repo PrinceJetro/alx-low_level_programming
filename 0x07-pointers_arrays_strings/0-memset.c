@@ -1,4 +1,4 @@
-#include "main.h"
+nclude "main.h"
 
 /**
  *
@@ -24,18 +24,18 @@ char *_memset(char *s, char b, unsigned int n)
 
 {
 
-unsigned int counter;
+		unsigned int counter;
 
 
 
-for (counter = 0; counter < n; counter++)
+			for (counter = 0; counter < n; counter++)
 
-{
+					{
 
-s[counter] = b;
+								s[counter] = b;
 
 									}
 
-return (s);
+				return (s);
 
 }
